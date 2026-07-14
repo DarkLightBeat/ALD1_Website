@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ald1_website/static/css/main.59a327de.css",
+    "main.js": "/ald1_website/static/js/main.35ac9551.js",
+    "static/media/Xinlong_1.jpg": "/ald1_website/static/media/Xinlong_1.a3166e2066a4e13736f3.jpg",
+    "static/media/Arno_2.jpg": "/ald1_website/static/media/Arno_2.154b2f54e30dc1e0826c.jpg",
+    "static/media/Junseo_1.jpg": "/ald1_website/static/media/Junseo_1.29f661f5369cdeb60644.jpg",
+    "static/media/Sanghyeon_1.jpg": "/ald1_website/static/media/Sanghyeon_1.ee17345ac090877d82f5.jpg",
+    "static/media/Anxin_1.jpg": "/ald1_website/static/media/Anxin_1.82f40b22dcc12cb66e68.jpg",
+    "static/media/Leo_2.jpg": "/ald1_website/static/media/Leo_2.49d7cd03c4bfddfb691a.jpg",
+    "static/media/Sangwon_1.jpg": "/ald1_website/static/media/Sangwon_1.4d11655d0fe51f6336d0.jpg",
+    "static/media/Geonwoo_2.jpg": "/ald1_website/static/media/Geonwoo_2.8f8ba9159ab91dc1f6db.jpg",
+    "index.html": "/ald1_website/index.html",
+    "main.59a327de.css.map": "/ald1_website/static/css/main.59a327de.css.map",
+    "main.35ac9551.js.map": "/ald1_website/static/js/main.35ac9551.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59a327de.css",
+    "static/js/main.35ac9551.js"
+  ]
+}

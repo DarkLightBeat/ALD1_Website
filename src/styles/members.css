@@ -1,0 +1,144 @@
+.members-section {
+  padding: 60px 30px;
+  background-color: #080808;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ── Card ── */
+.member-card {
+  background: var(--panel-gray);
+  border: 1px solid #333;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.member-card.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out,
+              border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.member-card.show:hover {
+  border-color: var(--neon-red);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(255, 0, 60, 0.15);
+}
+
+.card-number {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  font-family: 'Orbitron', sans-serif;
+  z-index: 0;
+}
+
+.card-image {
+  aspect-ratio: 3 / 4;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(80%);
+  transition: filter 0.4s;
+  display: block;
+}
+
+.member-card.show:hover .card-image img {
+  filter: grayscale(0%);
+}
+
+.card-info {
+  padding: 16px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to top, #000 0%, transparent 100%);
+}
+
+.card-info h3 {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.card-role {
+  color: var(--neon-red);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 5px 0 8px;
+  letter-spacing: 1px;
+}
+
+.member-details {
+  font-size: 0.7rem;
+  color: #999;
+  line-height: 1.6;
+  margin: 8px 0 12px;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.data-label {
+  color: var(--neon-red);
+  font-weight: 700;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+}
+
+.separator {
+  color: #555;
+  margin: 0 6px;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1200px) {
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+}

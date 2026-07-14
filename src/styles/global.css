@@ -1,0 +1,83 @@
+/* ── GOOGLE FONTS ── */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;600&display=swap');
+
+/* ── CSS VARIABLES ── */
+:root {
+  --neon-red: #ff003c;
+  --dark-red: #8a0020;
+  --carbon-black: #0a0a0a;
+  --panel-gray: #141414;
+  --speed-silver: #e0e0e0;
+  --text-dim: #888;
+}
+
+/* ── RESET & BASE ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #050505;
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body.body-lock {
+  overflow: hidden;
+}
+
+/* ── SHARED SECTION STYLES ── */
+.section-header {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  border-left: 5px solid var(--neon-red);
+  padding-left: 20px;
+}
+
+.red-slash {
+  color: var(--neon-red);
+}
+
+/* ── SHARED KEYFRAMES ── */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+@keyframes pulse {
+  0%   { opacity: 1; box-shadow: 0 0 5px var(--neon-red); }
+  50%  { opacity: 0.3; box-shadow: 0 0 0px var(--neon-red); }
+  100% { opacity: 1; box-shadow: 0 0 5px var(--neon-red); }
+}
